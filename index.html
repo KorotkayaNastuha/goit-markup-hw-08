@@ -20,6 +20,13 @@
         <div class="container">
             <nav class="page-header__nav">
             <a class="logo" href="./index.html">Web<span class="page-header__logo">Studio</span></a>
+            
+            <button class="menu-button" type="button" data-modal-open>
+                <svg class="icon-menu" widht="24" height="16">
+                <use href="./img/images/icon-menu.svg#icon-menu"></use>
+            </svg></button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
             <ul class="site-nav">
                 <li><a class="site-nav__item site-nav__underline site-nav__current" href="./index.html">Студия</a></li>
                 <li><a class="site-nav__item" href="./portfolio.html">Портфолио</a></li>
@@ -37,6 +44,12 @@
                     <use href="./img/images/icons.svg#smartphone"></use>
                 </svg>
                  +380961111111</a>
+                 </div>
+                <button class="modal__close" data-modal-close>
+                    <svg class="icon-close" widht="18" height="18">
+                        <use href="./img/images/icon-close.svg#close"></use>
+                    </svg>
+                </div>
             </div>
             </nav>
         </div>    
