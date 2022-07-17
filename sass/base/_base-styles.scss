@@ -35,12 +35,14 @@ ul {
 }
 
 .container {
+    min-width: 320px;
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
 
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 .body {
     font-family: Roboto, sans-serif;
