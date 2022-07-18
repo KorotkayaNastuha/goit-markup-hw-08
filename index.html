@@ -17,46 +17,43 @@
     <!--Header-->
         <header class="page-header">
         
-        <div class="container">
-          
-            <a class="logo" href="./index.html">Web<span class="page-header__logo">Studio</span></a>
-            
-        <button data-menu-button type="button" class="mobile-menu__button is-open" aria-expanded="true" aria-controls="mobile-menu" >
-        <svg class="mobile-menu__svg" widht="24" height="24">
-            <use href="./img/images/icon-menu.svg#menu" class="mobile-menu__menu"></use>
-            <use href="./img/images/icon-cross.svg#cross"class="mobile-menu__cross"></use>
-        </svg>
-        </button>
-          <div class="mobile-menu is-open" id="mobile-menu" data-menu > 
-           <nav class="page-header__nav">
-            <ul class="site-nav">
-                <li><a class="site-nav__item site-nav__underline site-nav__current" href="./index.html">Студия</a></li>
-                <li><a class="site-nav__item" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="site-nav__item" href="">Контакты</a></li>
-            </ul>
+            <div class="container">
+                <nav class="page-header__nav">
+                    <a class="logo" href="./index.html">Web<span class="page-header__logo">Studio</span></a>
+                    <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button >
+                    <svg widht="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./img/images/menu-cross.svg#menu"></use>
+                        <use class="icon-cross" href="./img/images/menu-cross.svg#cross"></use>
+                    </svg>
+                    </button>
+                <div class="menu-container is-open" id="menu-container" data-menu>
+                    <ul class="site-nav">
+                        <li><a class="site-nav__item site-nav__underline site-nav__current" href="./index.html">Студия</a></li>
+                        <li><a class="site-nav__item" href="./portfolio.html">Портфолио</a></li>
+                        <li><a class="site-nav__item" href="">Контакты</a></li>
+                    </ul>
+        
+                    <div class="site-nav__contact">
+                        <a class="site-nav__contact site-nav__email" href="mailto:info@devstudio.com">
+                            <svg width="16" height="12">
+                                <use href="./img/images/icons.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com </a>
+                        <a class="site-nav__contact site-nav__tel" href="+380961111111">
+                            <svg width="10" height="16">
+                                <use href="./img/images/icons.svg#smartphone"></use>
+                            </svg>
+                            +380961111111</a>
+                    </div>
+                </div>    
+                </nav>
 
-            <div class="site-nav__contact">
-            <a class="site-nav__contact site-nav__email" href="mailto:info@devstudio.com">
-                <svg width="16" height="12" >
-                    <use href="./img/images/icons.svg#envelope"></use>
-                </svg>
-                info@devstudio.com </a>
-            <a class="site-nav__contact site-nav__tel" href="+380961111111">
-                <svg width="10" height="16">
-                    <use href="./img/images/icons.svg#smartphone"></use>
-                </svg>
-                 +380961111111</a>
             </div>
-            </nav>
-            </div>
-               
-               </div>
+            
+                
                 
             
-            
-            
-        </div>    
-        </header> 
+        </header>
          <!--Hero-->
          <main>  
         <section class="hero overlay">
