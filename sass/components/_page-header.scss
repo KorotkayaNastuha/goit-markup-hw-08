@@ -19,7 +19,12 @@
     width: 40px;
     height: 40px;
     background-color: transparent;
+    z-index: 5;
+    @media screen and (min-widht:768px) {
+        display: none;
 
+        
+    }
 }
 .menu-button .icon-cross{
     display: none;
@@ -33,9 +38,10 @@
 .menu-container{
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0%;
     left: 0;
     width: 100%;
+    height: 100vh;
     
 
     background-color: $bgr-color;
@@ -43,7 +49,6 @@
     
     padding-left: 40px;
     padding-top: 48px;
-    border: solid;
 
     &.is-open{
         display: block;
@@ -62,6 +67,12 @@
     color:$main-secon-color;
 
     text-decoration: none;
+
+    &:focus,
+    &:hover{
+        color: #2196F3;
+        fill: currentColor;
+    }
 }
 .site-nav li {
     padding-bottom: 32px;
@@ -72,10 +83,6 @@
 }
 .site-nav__contact{
     display: block;
-    
-    
-    
-
 }  
 .site-nav__contact>svg {
     display: none;
@@ -109,20 +116,17 @@
     display: flex;
     padding-top: 64px;
     padding-bottom: 48px;
+    gap: 10px;
     
 
-    &__item{
+    &__item:not(:last-child){
     padding-right: 10px;
-    &:last-child{
-        padding-right: 0;
-    }
-    &+&{
-    border-left: 1px solid rgba(33, 33, 33, 0.2);
-    padding-left: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    
     }
         
-    }
 }
+
 
 .header-social__link{
         font-family: 'Roboto';
@@ -132,10 +136,6 @@
         line-height: 22px;
         letter-spacing: 0.02em;
         text-decoration: none;
-        padding-left: 10px;
-        color: #2196F3; 
         
-      &:first-child{
-        padding-left: 0;
-      }
+        color: #2196F3;      
 }
