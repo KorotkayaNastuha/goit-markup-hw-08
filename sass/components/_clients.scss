@@ -1,0 +1,43 @@
+/*Clients section*/
+.section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: $main-secon-color;
+    margin-bottom: 30px;
+}
+
+.clients__item {
+    display: block;
+    width: 210px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    transition: $cubic;
+
+    &:hover,
+    &:focus {
+        color: $color-for-hover;
+        border: 1px solid #2196F3;
+        fill: currentColor;
+
+    }
+}
+
+.clients__icon {
+    margin: 16px 52px;
+    fill: currentColor;
+}
