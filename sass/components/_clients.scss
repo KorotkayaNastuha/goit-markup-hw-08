@@ -2,12 +2,14 @@
 .section{
     padding-top: 60px;
     padding-bottom: 60px;
+    
 }
 .clients {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    
 }
 
 .clients-title {
@@ -20,13 +22,14 @@
 }
 
 .clients__item {
-    display: block;
+    display: flex;
     width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
     transition: $cubic;
+    
 
     &:hover,
     &:focus {
