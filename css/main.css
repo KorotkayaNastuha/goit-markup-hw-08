@@ -273,7 +273,7 @@ ul {
   margin-top: 50px;
   margin-bottom: 0;
   gap: 30px;
-  /*position: relative;*/
+  position: relative;
 }
 
 .portfolio__box {
@@ -292,7 +292,7 @@ ul {
 }
 
 .portfolio__overlay {
-  /*position: relative;*/
+  position: relative;
   overflow: hidden;
 }
 
