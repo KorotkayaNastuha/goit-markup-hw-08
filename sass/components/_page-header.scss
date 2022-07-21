@@ -56,7 +56,12 @@
     &.is-open{
         display: block;
     }
-       
+                        
+                                    @media screen and (min-width: 768px) {
+                                            width: 768px;
+                                            display: none;
+                                        }
+                        
 }
 
 .site-nav__item {
@@ -76,6 +81,7 @@
         color: #2196F3;
         fill: currentColor;
     }
+
 }
 .site-nav__current {
     color: #2196F3;
