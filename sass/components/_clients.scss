@@ -4,10 +4,10 @@
     padding-bottom: 60px;
     
 }
-.clients {
+.clients__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
     gap: 30px;
     
 }
@@ -25,6 +25,9 @@
     display: flex;
     width: 210px;
     height: 92px;
+    justify-content: center;
+    align-items: center;
+
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;

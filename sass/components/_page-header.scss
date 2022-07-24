@@ -2,33 +2,52 @@
     padding-top: 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
+   
+    
     
 
-  
-  
+    @media screen and (min-width: 768px) {
+            padding-top: 26px;
+            padding-bottom: 26px;
+        }
 }
-.page-header__nav{
-    display: flex;
+.mobile-group{
     align-items: center;
+    display: flex;
     justify-content: space-between;
+        
+}
+  
 
-   
-     
+.page-header__nav{
+    display: none;
+    
+    align-items: center;
+    justify-content: space-between;    
 }
 
 .menu-button{
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
+    
+    display:flex;
+    
     width: 40px;
     height: 40px;
+    margin-left: auto;
+    padding: 0;
+    border: none;
     background-color: transparent;
-    z-index: 5;
+    z-index: 50;
+    transform: translateY(0%);
     
-    @media screen and (min-width: 768px) {
-        display: none;    
-    }    
+    
+
+        &:focus,
+        &:hover {
+            fill: #2196F3;
+            
+        }
+    
+      
 }
 .menu-button .icon-cross{
     display: none;
@@ -40,17 +59,16 @@
     display: none;
 }
 .menu-container{         
-        display: none;
+        display: none;          
         position: fixed;
         top: 0%;
         left: 0%;
-        width: 100%;         
-                   
-          
+        width: 100%;
+       
         z-index: 2;
-    
         background-color: $bgr-color;
         padding: 0;
+        
 
 
     &.is-open{
@@ -59,9 +77,11 @@
         padding-top: 48px; 
     }
         
+
+        
 }
 
-.site-nav__item {
+.mobile-nav__item {
     display: block;
     font-family: 'Roboto';
     font-style: normal;
@@ -80,28 +100,27 @@
     }
 
 
-
 }
-.site-nav__current {
+.mobile-nav__current {
     color: #2196F3;
 }
-.site-nav li {
+.mobile-nav li {
     padding-bottom: 32px;
 }
    
-.site-nav li:last-child {
+.mobile-nav li:last-child {
     padding-bottom: 0px;
 }
-.site-nav__contact{
+.mobile-nav__contact{
     display: block;
   
 }  
-.site-nav__contact>svg {
+.mobile-nav__contact>svg {
     display: none;
   
 
 }
-.site-nav__tel {
+.mobile-nav__tel {
     
     font-family: 'Roboto';
     font-style: normal;
@@ -115,7 +134,7 @@
     color: #2196F3;
   
 }
-.site-nav__email{
+.mobile-nav__email{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -128,7 +147,7 @@
     color: #757575;
    
 }
-.header-social{
+.mobile-social{
     display: flex;
     padding-top: 64px;
     padding-bottom: 48px;
@@ -147,7 +166,7 @@
 }
 
 
-.header-social__link{
+.mobile-social__link{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;

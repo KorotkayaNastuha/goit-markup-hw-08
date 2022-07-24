@@ -33,13 +33,13 @@
         background: $bgr-color;
         cursor: pointer;
 
-        fill: currentColor;
+        
         transition: fill $cubic;
 
 
         &:hover {
-            color: $color-for-hover;
-            fill: currentColor;
+            fill: $color-for-hover;
+            
         }
 
     }
