@@ -8,11 +8,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+
     @media screen and (max-width: 480px){
         justify-content: center;
     }
 }
-
+.clients{
+        flex-basis: calc((100% - 30px)/2);
+}
 .clients-title {
     font-weight: 700;
     font-size: 28px;
@@ -34,6 +38,7 @@
     color: #AFB1B8;
     transition: $cubic;
     
+    
 
     &:hover,
     &:focus {
@@ -45,6 +50,6 @@
 }
 
 .clients__icon {
-    margin: 16px 52px;
+    
     fill: currentColor;
 }
