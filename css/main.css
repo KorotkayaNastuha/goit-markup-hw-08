@@ -925,6 +925,13 @@ textarea {
       flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (max-width: 480px) {
+  .clients__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .clients-title {
   font-weight: 700;
@@ -939,7 +946,6 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 210px;
   height: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
