@@ -7,8 +7,11 @@
         padding-top: 26px;
         padding-bottom: 26px;
     }
-    
-   
+        @media screen and (min-width: 1200px){
+                        padding-top: 24px;
+                        padding-bottom: 24px;
+                        border-bottom: 1px solid #ECECEC;
+    }
 
 }
 .page-header__nav{
@@ -184,6 +187,11 @@
         padding-right: 65px;
 
     }
+        @media screen and (min-width: 1200px){
+                display: flex;
+                margin: auto;
+                margin-left: 93px;
+                align-items: center;}
 }
 .site-nav li {
     display: block;
@@ -245,8 +253,6 @@
         margin-left: auto;
         flex-direction: column-reverse;
         gap: 10px;
-        
-
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -254,11 +260,22 @@
         letter-spacing: 0.02em;
         color: #757575;
             }
+    @media screen and (min-width: 1200px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: currentColor;
+        transition: $cubic;
 
+    }
 }
 .site-nav__email>svg {
     width: 14px;
     height: 10px;
+    @media screen and (min-width: 1200px){
+        width: 16px;
+        height: 10px;
+    }
 }
 
 .site-nav__tel>svg {
