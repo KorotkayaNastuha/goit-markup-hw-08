@@ -26,15 +26,26 @@
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(../img/images/mobile-hero.jpg);
+    background-image: url(../img/images/mobile/hero-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../img/images/mobile-hero.jpg);
+        url(../img/images/mobile/hero-img.jpg);
 }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx),
+            @media screen and (min-width: 768px){
+            background-image: url(../img/images/mobile/hero-img@2x.jpg);
+                background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url(../img/images/mobile/hero-img@2x.jpg);
+            }
+
 .img{
     width: 100%;
 }

@@ -13,9 +13,14 @@
     @media screen and (max-width: 480px){
         justify-content: center;
     }
+
+
 }
 .clients{
         flex-basis: calc((100% - 30px)/2);
+        @media screen and (min-width: 768px){
+        flex-basis: calc((100% - 60px)/3);
+        }
 }
 .clients-title {
     font-weight: 700;
@@ -46,7 +51,8 @@
         border: 1px solid #2196F3;
         fill: currentColor;
 
-    }
+    }       
+
 }
 
 .clients__icon {

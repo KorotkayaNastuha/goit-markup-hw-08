@@ -10,6 +10,7 @@
 .footer-list{
     text-align: center;
     display: block;
+    
 }
 .footer-list__contact {
     font-family: 'Roboto';
@@ -35,6 +36,11 @@
 .footer-nav {
     display: block;
     align-items: baseline;
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 
 .footer-list__address {
@@ -108,7 +114,7 @@
     margin-top: 60px;
 
     
-    margin-left: auto;
+   
 }
 
 .form-label-list {

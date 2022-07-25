@@ -7,6 +7,7 @@
         padding-top: 26px;
         padding-bottom: 26px;
     }
+    
    
 
 }
@@ -19,7 +20,7 @@
         display: flex;
         position: absolute;
         padding-left: 237px;
-        width: 100%;
+        
     }
 }
 .mobile-group{
@@ -180,7 +181,7 @@
 
     @media screen and (min-width: 768px){
         position: relative;
-        margin-right: 80px;
+        padding-right: 65px;
 
     }
 }
@@ -255,12 +256,14 @@
             }
 
 }
-.site-nav__email {
-    margin-right: 50px;
+.site-nav__email>svg {
+    width: 14px;
+    height: 10px;
 }
 
-.site-nav__tel {
-    margin-right: 0px;
+.site-nav__tel>svg {
+    width: 10px;
+    height: 14px;
 }
 .site-nav__contact>svg {
     margin-right: 10px;

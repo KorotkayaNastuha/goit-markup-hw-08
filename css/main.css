@@ -100,7 +100,6 @@ ul {
     display: flex;
     position: absolute;
     padding-left: 237px;
-    width: 100%;
   }
 }
 
@@ -264,7 +263,7 @@ ul {
 @media screen and (min-width: 768px) {
   .site-nav {
     position: relative;
-    margin-right: 80px;
+    padding-right: 65px;
   }
 }
 
@@ -350,12 +349,14 @@ ul {
   }
 }
 
-.site-nav__email {
-  margin-right: 50px;
+.site-nav__email > svg {
+  width: 14px;
+  height: 10px;
 }
 
-.site-nav__tel {
-  margin-right: 0px;
+.site-nav__tel > svg {
+  width: 10px;
+  height: 14px;
 }
 
 .site-nav__contact > svg {
@@ -380,6 +381,13 @@ ul {
 }
 .portfolio-item li:last-child {
   margin-right: 0px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .portfolio-item__button {
@@ -431,6 +439,12 @@ ul {
 .portfolio__box:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .portfolio__box {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
 }
 
 .portfolio__card {
@@ -524,12 +538,19 @@ ul {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/images/mobile-hero.jpg);
+  background-image: url(../img/images/mobile/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/images/mobile-hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/images/mobile-hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/images/mobile/hero-img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/images/mobile/hero-img.jpg);
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: url(../img/images/mobile/hero-img@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/images/mobile/hero-img@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/images/mobile/hero-img@2x.jpg);
+  }
 }
 
 .img {
@@ -578,6 +599,7 @@ ul {
   display: block;
   left: 50%;
   width: 100%;
+  max-width: 450px;
   background: #FFFFFF;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -835,9 +857,23 @@ textarea {
   gap: 30px;
   padding-left: 0;
 }
+@media screen and (min-width: 768px) {
+  .advantage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .advantage__item {
   max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .advantage__item {
+    width: 354px;
+  }
 }
 
 .advantage__icon {
@@ -1064,6 +1100,12 @@ textarea {
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
       flex-basis: calc((100% - 30px) / 2);
 }
+@media screen and (min-width: 768px) {
+  .clients {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
 
 .clients-title {
   font-weight: 700;
@@ -1136,6 +1178,17 @@ textarea {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .footer-list__address {
@@ -1210,7 +1263,6 @@ textarea {
   display: block;
   text-align: center;
   margin-top: 60px;
-  margin-left: auto;
 }
 
 .form-label-list {
