@@ -10,6 +10,9 @@
 .footer-list{
     text-align: center;
     display: block;
+    @media screen and (min-width: 1200px){
+    text-align: start;
+    }
     
 }
 .footer-list__contact {
@@ -61,6 +64,10 @@
     margin-top: 60px;
     height: 80px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
+
 
 }
 
@@ -127,6 +134,9 @@
     text-align: center;
 
     color: $color-text;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+        }
 }
 
 .form-input-list {

@@ -25,6 +25,17 @@
         padding-left: 237px;
         
     }
+        @media screen and (min-width: 1200px){
+        width:1200px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        position: absolute;
+        padding-left: 124px;
+
+    
+    
+    }
 }
 .mobile-group{
     align-items: center;
@@ -189,7 +200,7 @@
     }
         @media screen and (min-width: 1200px){
                 display: flex;
-                margin: auto;
+                
                 margin-left: 93px;
                 align-items: center;}
 }
@@ -232,6 +243,10 @@
     background: #2196F3;
     border-radius: 2px;
     position: absolute;
+    @media screen and (min-width: 1200px){
+        bottom: -32px;
+    }
+    
 }
 /*Contact*/
 .site-nav__contact {
@@ -261,12 +276,17 @@
         color: #757575;
             }
     @media screen and (min-width: 1200px){
-        display: flex;
+        display: inline;
         justify-content: center;
         align-items: center;
         fill: currentColor;
         transition: $cubic;
 
+    }
+}
+.site-nav__email{
+    @media screen and (min-width: 1200px){
+        margin-right: 50px;
     }
 }
 .site-nav__email>svg {
@@ -281,6 +301,11 @@
 .site-nav__tel>svg {
     width: 10px;
     height: 14px;
+        @media screen and (min-width: 1200px) {
+                width: 10px;
+                height: 16px;
+            }
+
 }
 .site-nav__contact>svg {
     margin-right: 10px;

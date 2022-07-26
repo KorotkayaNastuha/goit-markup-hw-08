@@ -14,6 +14,13 @@
         flex-wrap: wrap;
 
     }
+    @media screen and (min-width: 1200px){
+                display: flex;
+                justify-content: center;
+                background: $bgr-color;
+                gap: 30px;
+                padding-left: 0;
+            }
 }
 
 .advantage__item {
@@ -21,6 +28,9 @@
     @media screen and (min-width: 768px){
         width: 354px;
     }
+         @media screen and (min-width: 1200px){
+            width: 270px;
+         }
 }
 
 .advantage__icon {

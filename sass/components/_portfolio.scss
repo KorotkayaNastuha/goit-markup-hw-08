@@ -7,6 +7,12 @@
     margin-bottom: 0;
     gap: 30px;
     position: relative;
+
+   
+    
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 30px)/3);
+        }
 }
 
 .portfolio__box {
@@ -19,12 +25,25 @@
         }
                 @media screen and (min-width: 768px){
                         flex-basis: calc((100% - 60px)/2);
+                        
                 }
+                @media screen and (min-width: 1200px){
+                        flex-basis: calc((100% - 60px)/3);
+                        
+                }
+                 
 }
 
 .portfolio__card {
-    display: block;
+    display: flex;
     text-decoration: none;
+    flex-direction: column;
+    height: 100%;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        flex-grow: 1;
+    }
+
+
 }
 
 .portfolio__overlay {
@@ -67,13 +86,15 @@
     border-left: 1px solid #ECECEC;
     border-right: 1px solid #ECECEC;
     padding: 20px 24px;
+    flex-grow: 1;
+
 }
 
 .portfolio-text__project {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
+    
     color: $main-secon-color;
 }
 

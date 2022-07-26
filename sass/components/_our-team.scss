@@ -2,6 +2,10 @@
 .section{
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 .section-title{
     font-style: normal;
@@ -24,7 +28,15 @@
     padding-left: 0;
     margin: 0px;
 
-    gap: 30px;
+    
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+
+
 }
 
 .teamlead__foto {
@@ -34,6 +46,13 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 30px;
+    @media screen and (min-width: 768px){
+        width: 354px;
+    }
+         @media screen and (min-width: 1200px){
+            width: 270px;
+         }
+    
 }
 
 .teamlead__item {
