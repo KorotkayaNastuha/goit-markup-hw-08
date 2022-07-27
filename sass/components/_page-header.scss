@@ -282,7 +282,12 @@
         align-items: center;
         fill: currentColor;
         transition: $cubic;
-
+        
+        &:hover,
+        &:focus{
+                color: $color-for-hover;
+                fill: currentColor;
+        }
     }
 }
 .site-nav__email{
@@ -314,11 +319,6 @@
     margin-right: 10px;
 }
 
-.site-nav__contact:hover,
-.site-nav__contact:focus {
-    color: $color-for-hover;
-    fill: currentColor;
-}
 
 
 
