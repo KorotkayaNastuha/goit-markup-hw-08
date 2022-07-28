@@ -61,11 +61,12 @@
 .footer-connect {
     
     display: block;
-    margin-top: 60px;
     height: 80px;
     text-align: center;
+    margin-top: 60px;
     @media screen and (min-width: 1200px) {
             text-align: start;
+            margin-top: 0;
         }
 
 
@@ -120,6 +121,11 @@
     text-align: center;
     margin-top: 60px;
 
+    @media screen and (min-width: 1200px){
+            margin-top: 0;
+        }
+    
+
     
    
 }
@@ -132,6 +138,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
+    
 
     color: $color-text;
     @media screen and (min-width: 1200px) {

@@ -1,21 +1,11 @@
 /*Example section*/
 .achievement-section {
     display: none;
-    padding-bottom: 94px;
+    padding-top: 0;
     @media screen and (min-width: 1200px){
         display: block;
     }
 
-}
-
-.section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: $main-secon-color;
-    margin: auto;
-    text-align: center;
 }
 
 .achievement {

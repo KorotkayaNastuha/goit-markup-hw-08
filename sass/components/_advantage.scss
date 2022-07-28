@@ -1,8 +1,5 @@
 /*Advantage section*/
-.section{
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+
 .advantage {
     display: block;
     justify-content: center;
@@ -55,6 +52,13 @@
     text-transform: uppercase;
     color: $main-secon-color;
     text-align: center;
+    
+    @media screen and (min-width: 768px){
+        text-align: left;
+    }
+    @media screen and (min-width: 1200px){
+        text-align: left;
+    }
 }
 
 .advantage__text {
@@ -64,5 +68,5 @@
     letter-spacing: 0.03em;
     color: $main-color;
     margin-top: 10px;
-    margin-bottom: 30px;
+    
 }
