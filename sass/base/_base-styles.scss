@@ -82,7 +82,9 @@ ul {
     color: #212121;
     @media screen and (min-width: 1200px){
             font-size: 36px;
-            line-height: 1.2;
+            line-height: 1.2;}
 
-    }
+    
+        @media screen and (min-width: 480px){
+        margin-bottom:50px;}
 }

@@ -89,6 +89,11 @@ ul {
     line-height: 1.2;
   }
 }
+@media screen and (min-width: 480px) {
+  .section-title {
+    margin-bottom: 50px;
+  }
+}
 
 /*Logo*/
 .page-header__logo {
@@ -188,20 +193,22 @@ ul {
   }
 }
 
-.menu-button .icon-cross {
+.menu-button .icon-menu {
   display: none;
 }
 
-.menu-button.is-open .icon-cross {
+.menu-button.is-open .icon-menu {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button.is-open .icon-cross {
   display: none;
 }
 
 .menu-container {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -212,20 +219,26 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-y: auto;
-  z-index: 800;
+  z-index: 1;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   background-color: #FFFFFF;
   padding: 48px 0 48px 40px;
 }
 .menu-container.is-open {
-  display: block;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-.mobile-nav__item {
-  display: block;
-  font-family: "Roboto";
-  font-style: normal;
+.mobile-nav {
+  margin-bottom: auto;
+}
+
+.mobile-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-nav__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
@@ -233,7 +246,7 @@ ul {
   color: #212121;
   text-decoration: none;
 }
-.mobile-nav__item:focus, .mobile-nav__item:hover {
+.mobile-nav__link:focus, .mobile-nav__link:hover {
   color: #2196F3;
   fill: currentColor;
 }
@@ -242,20 +255,12 @@ ul {
   color: #2196F3;
 }
 
-.mobile-nav li {
-  padding-bottom: 32px;
-}
-
-.mobile-nav li:last-child {
-  padding-bottom: 0px;
-}
-
 .mobile-nav__contact {
-  display: block;
+  margin-bottom: 64px;
 }
 
-.mobile-nav__contact > svg {
-  display: none;
+.mobile-nav__list:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mobile-nav__tel {
@@ -270,13 +275,10 @@ ul {
 }
 
 .mobile-nav__email {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
-  padding-top: 32px;
   text-decoration: none;
   color: #757575;
 }
@@ -285,7 +287,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 64px;
   padding-bottom: 48px;
   gap: 10px;
 }

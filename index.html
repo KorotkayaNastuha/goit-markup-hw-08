@@ -19,30 +19,27 @@
             <div class="container mobile-group">
                 
                     <a class="logo" href="./index.html">Web<span class="page-header__logo">Studio</span></a>
-                    <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button >
-                    <svg widht="40" height="40" aria-label="Переключатель мобильного меню">
-                        <use class="icon-menu" href="./img/images/menu-cross.svg#menu"></use>
+                    <button type="button" class="menu-button"data-menu-button aria-expanded="false">
+                    <svg widht="40" height="40">
                         <use class="icon-cross" href="./img/images/menu-cross.svg#cross"></use>
+                        <use class="icon-menu" href="./img/images/menu-cross.svg#menu"></use>
+                        
                     </svg>
                     </button>
-                <div class="menu-container" id="menu-container" data-menu>
+                <div class="menu-container" data-menu>
                     <ul class="mobile-nav">
-                        <li><a class="mobile-nav__item mobile-nav__current" href="./index.html">Студия</a></li>
-                        <li><a class="mobile-nav__item" href="./portfolio.html">Портфолио</a></li>
-                        <li><a class="mobile-nav__item" href="">Контакты</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__current" href="./index.html">Студия</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Контакты</a></li>
                     </ul> 
-                    <div class="mobile-nav__contact">
-                        <a class="mobile-nav__contact mobile-nav__tel" href="+380961111111">
-                            <svg >
-                                <use href="./img/images/icons.svg#smartphone"></use>
-                            </svg>
-                            +380961111111</a>
-                        <a class="mobile-nav__contact mobile-nav__email" href="mailto:info@devstudio.com">
-                            <svg >
-                                <use href="./img/images/icons.svg#envelope"></use>
-                            </svg>
-                            info@devstudio.com </a>
-                    </div>
+                    <ul class="mobile-nav__contact">
+                        <li class="mobile-nav__list">
+                            <a class="mobile-nav__tel" href="+380961111111">+380961111111</a>
+                        </li>
+                        <li class=" mobile-nav__list">
+                            <a class=" mobile-nav__email"href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
                     <ul class="mobile-social">
                         <li class="mobile-social__item"><a class="mobile-social__link" href="">Instagram</a></li>
                         <li class="mobile-social__item"><a class="mobile-social__link" href="">Twitter</a></li>
@@ -70,9 +67,7 @@
                             +380961111111</a>
                            
                     </div>
-                   
-                    
-                
+  
             </div>    
         </header>
          <!--Hero-->

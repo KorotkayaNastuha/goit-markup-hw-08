@@ -66,18 +66,18 @@
         }
       
 }
-.menu-button .icon-cross{
+.menu-button .icon-menu{
     display: none;
 }
-.menu-button.is-open .icon-cross{
+.menu-button.is-open .icon-menu{
     display: block;
 }
-.menu-button.is-open .icon-menu{
+.menu-button.is-open .icon-cross{
     display: none;
 }
 .menu-container{  
            
-        display: none;          
+        display: flex;          
         position: fixed;
         top: 0;
         left: 0;
@@ -85,24 +85,24 @@
         height: 100%;
         flex-direction: column;
         overflow-y: auto;
+        z-index: 1;
         
        
-        z-index: 800;
+        transform: translateX(-100%);
         background-color: $bgr-color;
         padding: 48px 0 48px 40px;
         
-    &.is-open{
-        display: block;        
- 
-        
+    &.is-open{ 
         transform: translateX(0);
     }       
 }
-
-.mobile-nav__item {
-    display: block;
-    font-family: 'Roboto';
-    font-style: normal;
+.mobile-nav{
+    margin-bottom: auto;
+}
+.mobile-nav__item:not(:last-child){
+    margin-bottom: 32px;
+}
+.mobile-nav__link {
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
@@ -116,27 +116,20 @@
         color: #2196F3;
         fill: currentColor;
     }
-
-
 }
+
+
 .mobile-nav__current {
     color: #2196F3;
 }
-.mobile-nav li {
-    padding-bottom: 32px;
-}
-   
-.mobile-nav li:last-child {
-    padding-bottom: 0px;
-}
-.mobile-nav__contact{
-    display: block;
-  
-}  
-.mobile-nav__contact>svg {
-    display: none;
-  
 
+   
+
+.mobile-nav__contact{
+    margin-bottom: 64px;  
+}  
+.mobile-nav__list:not(:last-child){
+    margin-bottom: 32px;
 }
 .mobile-nav__tel {
     
@@ -153,13 +146,12 @@
   
 }
 .mobile-nav__email{
-    font-family: 'Roboto';
-    font-style: normal;
+
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.02em;
-    padding-top: 32px;
+
     text-decoration: none;
     
     color: #757575;
@@ -167,7 +159,7 @@
 }
 .mobile-social{
     display: flex;
-    padding-top: 64px;
+    
     padding-bottom: 48px;
     gap: 10px;
     
