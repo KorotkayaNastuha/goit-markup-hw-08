@@ -83,14 +83,15 @@ ul {
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (min-width: 480px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section-title {
     font-size: 36px;
     line-height: 1.2;
-  }
-}
-@media screen and (min-width: 480px) {
-  .section-title {
     margin-bottom: 50px;
   }
 }
@@ -515,7 +516,6 @@ ul {
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
   margin-right: 8px;
-  margin-top: 15px;
   border: none;
 }
 .portfolio-item__button:hover, .portfolio-item__button:focus {
@@ -538,6 +538,11 @@ ul {
   gap: 30px;
   position: relative;
   text-align: left;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    margin-top: 50px;
+  }
 }
 
 .portfolio__box {
@@ -660,16 +665,16 @@ ul {
   color: #FFFFFF;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
-  .title {
-    font-size: 44px;
-    line-height: 1.36;
-  }
-}
 @media screen and (min-width: 768px) {
   .title {
     font-size: 26px;
     line-height: 1.6;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -1046,6 +1051,11 @@ textarea {
 .advantage__item {
   max-width: 450px;
 }
+@media screen and (max-width: 767px) {
+  .advantage__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .advantage__item {
     width: 354px;
@@ -1186,6 +1196,8 @@ textarea {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.teamlead__foto:not(:last-child) {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -1307,12 +1319,13 @@ textarea {
   line-height: 33px;
   text-align: center;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .clients-title {
     font-size: 36px;
     line-height: 1.2;
+    margin-bottom: 50px;
   }
 }
 

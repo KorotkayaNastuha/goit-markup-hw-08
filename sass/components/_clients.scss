@@ -28,11 +28,13 @@
     line-height: 33px;
     text-align: center;
     color: $main-secon-color;
-    margin-bottom: 50px;
-    
+    margin-bottom: 30px;
+
     @media screen and (min-width: 1200px){
         font-size: 36px;
-        line-height: 1.2;}
+        line-height: 1.2;
+        margin-bottom: 50px;}
+
 }
 
 .clients__item {

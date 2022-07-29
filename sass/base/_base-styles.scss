@@ -80,11 +80,14 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+        @media screen and (min-width: 480px){
+        margin-bottom:30px;}
+
     @media screen and (min-width: 1200px){
-            font-size: 36px;
-            line-height: 1.2;}
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 50px;}
 
     
-        @media screen and (min-width: 480px){
-        margin-bottom:50px;}
+
 }

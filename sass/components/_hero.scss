@@ -14,16 +14,16 @@
     text-transform: uppercase;
     color: $color-text;
     text-align: center;
-
-    @media screen and (min-width: 1200px){
-        font-size: 44px;
-        line-height: 1.36;
-     }
     @media screen and (min-width: 768px){
         font-size: 26px;
         line-height: 1.6;
 
     }
+    @media screen and (min-width: 1200px){
+        font-size: 44px;
+        line-height: 1.36;
+     }
+
 }
 
 .overlay {
