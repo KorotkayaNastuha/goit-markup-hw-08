@@ -68,7 +68,9 @@
             text-align: start;
             margin-top: 0;
         }
-
+    @media screen and (max-width: 480px){
+        padding-top: 60px;
+    }
 
 }
 
@@ -124,7 +126,9 @@
     @media screen and (min-width: 1200px){
             margin-top: 0;
         }
-    
+                @media screen and (max-width: 480px) {
+                    padding-top: 60px;
+                }
 
     
    
