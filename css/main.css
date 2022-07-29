@@ -486,6 +486,7 @@ ul {
       flex-wrap: wrap;
   margin: auto;
   padding-left: 0px;
+  gap: 8px;
 }
 .portfolio-item li:last-child {
   margin-right: 0px;
@@ -515,7 +516,6 @@ ul {
           align-items: flex-start;
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
-  margin-right: 8px;
   border: none;
 }
 .portfolio-item__button:hover, .portfolio-item__button:focus {
@@ -1203,7 +1203,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .teamlead__foto {
     width: 354px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {

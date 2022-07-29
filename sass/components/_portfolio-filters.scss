@@ -5,7 +5,7 @@
     
     margin: auto;
     padding-left: 0px;
-
+    gap: 8px;
     & li:last-child {
         margin-right: 0px;
     }
@@ -28,7 +28,8 @@
     align-items: flex-start;
     border-radius: 4px;
     padding: 6px 22px 6px 22px;
-    margin-right: 8px;
+    
+    
     
     border: none;
 
